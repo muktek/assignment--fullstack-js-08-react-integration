@@ -63,7 +63,7 @@ You will need to create the react components for our specific application:
 
 - [x] **- [x] **Run the nxkplus react generator**
   ```sh
-  yo nxkplus:auth
+  yo nxkplus:react
   ```
   - installs webpack/babel libraries  
   - generates React config files:

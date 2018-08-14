@@ -24,46 +24,20 @@ You are going to build a full stack web application with node.js + React. In ord
 ## The Assignment
 For this assignment, we will focus on the application's **React configuration**.
 
-###  Overview
-
-#### Assignment Components
-
-For this assignment you will need to complete 2 principle tasks:
+You will need to complete 2 principle tasks:
 
 - **(A) configure React in our node application**  
 - **(B) create our application React components**
 
-#### (A) Configuring React
 
-In the context of our full stack application requires four things:
-
-1. Creating files/folders for React in our application
-
-2. Installing + configuring React build tools (webpack and babel) for converting React JSX to normal javascript.
-
-3. Adjust our `npm run dev` command in `package.json` to watch for changes in our react source files.
-
-4. Configure the express application to send an `.ejs` file that contains our React application.
-
-We will use the yemoan `nxkplus` generator for parts 1 + 2, and you will have instructions for parts 3 + 4 in the *Requirements* section below.
-
-#### (B) Create Application React Components
-
-You will need to create the react components for our specific application:
-- `JobListings`
-- `CompanyListings`
-- `LoginForm`
-- `RegisterForm`
-- `NoMatch404`
-
-
-### Requirements
+## Requirements
 
 #### (A) Configuring React
 
-- [x] **- [x] **Run the nxkplus react generator**
+- [x] **Run the nxko:react code generator**
+
   ```sh
-  yo nxkplus:react
+  yo nxko:react
   ```
   - installs webpack/babel libraries  
   - generates React config files:
@@ -75,8 +49,8 @@ You will need to create the react components for our specific application:
     - `/src/client/js/App.js`
     - `/src/views/reactApp.ejs`
 
-- [x] **- [x] **Configure `package.json` dev build scripts**
-  - this tells our `npm run dev` command also to run webpack/babel on our `/client/js` folder
+- [x] **Configure `package.json` dev build scripts**
+  - this tells our `npm run dev` command also to run the webpack watcher on our `src/client/js` folder
 
   ```js
   ...
@@ -89,9 +63,10 @@ You will need to create the react components for our specific application:
   ```
 
 - [x] **Configure `server.js` to send `reactApp.js` view**
+
   - if no routes match, send `reactApp.ejs` to client.
   ```js
-  ...
+  // ...
   app.use('/api', apiRouter)
   app.use('/auth', authRouter)
   app.use('/', pageRouter)
@@ -99,7 +74,7 @@ You will need to create the react components for our specific application:
   app.use((req, res)=>{
     res.render('reactApp.ejs')
   })
-  ...
+  // ...
   ```
 
 - [x] **Run `npm run dev` Test routes in browser**
@@ -119,11 +94,11 @@ You will need to create the react components for our specific application:
 
 #### (B) Configuring React in Application
 
-- [x] **Download + unzip component folder with files into `src/client/js/`**
+- [x] **Download + unzip folder with react component files into `src/client/js/`**
 ```sh
 curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/components-files.zip > components-files.zip
 
-unzip components-files.zip -d /src/client/js
+unzip components-files.zip -d src/client/js
 ```
 
 - [x] **Import components into `App.js` and configure React router**
@@ -138,16 +113,14 @@ unzip components-files.zip -d /src/client/js
 ## Setup Instructions
 
 In Terminal:
-
 ```sh
 # (1) navigate to your project--devjobs directory
-cd ~/Documents/muktek/assignments/project--devjobs
+cd ~/muktek/assignments/project--devjobs
 
 # (2) Commit your changes from the previous demo
 git add .
-git commit -m 'committing work from part-07-auth-1'
+git commit -m 'committing work from part-07-auth'
 
 # (3) You will work on the part-08-react-configuration branch for this feature
 git checkout -b part-08-react-configuration
-
 ```

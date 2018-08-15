@@ -96,7 +96,7 @@ You will need to complete 2 principle tasks:
 
 - [x] **Download + unzip folder with react component files into `src/client/js/`**
 ```sh
-curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/components-files.zip > components-files.zip
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/component-files.zip > componens-files.zip
 
 unzip components-files.zip -d src/client/js
 ```

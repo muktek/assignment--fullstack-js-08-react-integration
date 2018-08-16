@@ -23,7 +23,9 @@ export default class Nav extends React.Component {
   render(){
     return   <div className="navbar">
         <div>
-          <a className="nav__link nav__link-home" href="/">&lt; <i className="ion-ios-home-outline"/> &gt;</a>
+          &lt;
+          <span style={{fontSize: '1rem', fontFamily: 'sans-serif', display: 'inline-block', verticalAlign: 'middle', margin: '.25rem'}}>HOME</span> 
+          &gt;
         </div>
         <div>
           {routesList.map(this._navLinkJsx)}

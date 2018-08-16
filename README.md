@@ -94,9 +94,16 @@ You will need to complete 2 principle tasks:
 
 #### (B) Configuring React in Application
 
+- [x] **Download + unzip folder with styles files into `src/client/js/`**
+```sh
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-files.zip > style-files.zip
+
+unzip components-files.zip -d public/css/styles.css
+```
+
 - [x] **Download + unzip folder with react component files into `src/client/js/`**
 ```sh
-curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/component-files.zip > componens-files.zip
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/component-files.zip > components-files.zip
 
 unzip components-files.zip -d src/client/js
 ```

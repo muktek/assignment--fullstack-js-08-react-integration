@@ -163,6 +163,14 @@ img{
   border: 1px solid #ddd;
 }
 
+.nav__link-logout{
+  background: #666;
+  color: #ddd;
+  margin-left: 1rem;
+  padding: .5rem .75rem;
+  cursor: pointer;
+}
+
 .nav__link-home{
   font-size: 2.2rem;
   color:  #C2185B;
@@ -387,7 +395,7 @@ img{
     max-width: 250px;
     margin: 0 auto;
   }
-  .company-single__name{
+  .company-single__title{
     margin: .25rem;
   }
   .company-single__location{
@@ -430,4 +438,68 @@ img{
   font-size: .75rem;
   align-self: flex-end;
   text-align: center;
+}
+
+.page-dashboard{
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 80vh;
+  background: #333;
+  margin-top: 5rem;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.page-dashboard__user-actions{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.page-dashboard__action-btn {
+   width: 250px;
+   padding: 1rem;
+   border: 1px solid #767;
+   margin : .75rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-size: 1.5rem;
+   text-align: left;
+}
+
+.page-dashboard__action-btn i{
+  padding-left: .5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.page-dashboard--username{
+  color:  #8BC34A;
+}
+
+
+.page-dashboard__action-btn--user-profile{
+  background: #FF9800
+}
+
+.page-dashboard__action-btn--new-job{
+  background: #8BC34A;
+}
+
+.page-dashboard__action-btn--view-jobs{
+  background: #C2185B;
+}
+
+.page-dashboard__btn-change{
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.form--login{
+  margin-top: 3rem;
 }

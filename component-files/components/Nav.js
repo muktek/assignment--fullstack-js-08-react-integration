@@ -1,35 +1,74 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom'
 
-const routesList =  [
-  {routeText: 'Jobs' , destination: '/jobs' },
-  {routeText: 'Companies' , destination: '/companies' },
-  {routeText: 'Log In' , destination: '/login' },
-  {routeText: 'Sign Up' , destination: '/register' }
-]
-
 export default class Nav extends React.Component {
-  _navLinkJsx (rObj, i) {
-    return <NavLink
-      activeClassName="nav__link--selected"
-      className="nav__link nav__link-register"
-      to={rObj.destination}
-      key={i+rObj.destination}
-      >
-      {rObj.routeText}
-    </NavLink>
-  }
 
   render(){
-    return   <div className="navbar">
+    return  (
+      <div className="navbar">
         <div>
-          &lt;
-          <span style={{fontSize: '1rem', fontFamily: 'sans-serif', display: 'inline-block', verticalAlign: 'middle', margin: '.25rem'}}>HOME</span> 
-          &gt;
+          <a className="nav__link nav__link-home" href="/">
+            &lt;
+            <span style={{fontSize: '1rem', fontFamily: 'sans-serif', display: 'inline-block', verticalAlign: 'middle', margin: '.25rem'}}>HOME</span>
+            &gt;
+          </a>
         </div>
+        {/* ----- YOUR WORK BELOW -----  */}
         <div>
-          {routesList.map(this._navLinkJsx)}
+
+        {/* [ Jobs ] button  */}
+          <NavLink
+            activeClassName="nav__link--selected"
+            className="nav__link nav__link-register"
+            to="/jobs">
+              Jobs
+          </NavLink>
+
+          {/* [ Companies ] button  */}
+          <NavLink
+            activeClassName="nav__link--selected"
+            className="nav__link nav__link-register"
+            to="/companies">
+              Companies
+          </NavLink>
+
+          {/* [ Dashboard ] button  */}
+          <NavLink
+            activeClassName="nav__link--selected"
+            className="nav__link"
+            to={`/dashboard`}
+            key={'dashboardnav'}>
+            Dashboard
+            </NavLink>
+
+            {/* [ Register ] button  */}
+            <NavLink
+              activeClassName="nav__link--selected"
+              className="nav__link"
+              to={`/register`}>
+                Sign Up
+            </NavLink>
+
+            {/* [ Login ] button  */}
+            <NavLink
+              activeClassName="nav__link--selected"
+              className="nav__link"
+              to={`/login`}>
+                Sign Up
+            </NavLink>
+
+
+          {/* [ Logout ] button  */}
+          <span
+              className="nav__link nav__link-logout"
+              onClick = { ()=>{ /*write handler func here*/ } }
+              >
+                Logout
+            </span>
+
+
         </div>
       </div>
+    )
   }
 }

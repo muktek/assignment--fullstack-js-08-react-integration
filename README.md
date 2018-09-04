@@ -96,7 +96,9 @@ You will need to complete 2 principle tasks:
 
 - [x] **Download + unzip folder with styles files into `public/css/`**
 ```sh
-curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-files.zip > style-files.zip
+# from the root-folder of your project:
+
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-file.zip > style-files.zip
 
 unzip style-files.zip -d public/css/styles.css
 ```

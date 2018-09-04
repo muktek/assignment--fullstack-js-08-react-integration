@@ -98,9 +98,9 @@ You will need to complete 2 principle tasks:
 ```sh
 # from the root-folder of your project:
 
-curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-file.zip > style-files.zip
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-file.zip > style-file.zip
 
-unzip style-files.zip -d public/css/styles.css
+unzip style-file.zip -d public/css/styles.css
 ```
 
 - [x] **Download + unzip folder with react component files into `src/client/js/`**

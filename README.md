@@ -94,18 +94,18 @@ You will need to complete 2 principle tasks:
 
 #### (B) Configuring React in Application
 
-- [x] **Download + unzip folder with styles files into `src/client/js/`**
+- [x] **Download + unzip folder with styles files into `public/css/`**
 ```sh
 curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/style-files.zip > style-files.zip
 
-unzip components-files.zip -d public/css/styles.css
+unzip style-files.zip -d public/css/styles.css
 ```
 
 - [x] **Download + unzip folder with react component files into `src/client/js/`**
 ```sh
-curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/component-files.zip > components-files.zip
+curl https://raw.githubusercontent.com/muktek/assignment--fullstack-js-08-react-integration/master/component-files.zip > component-files.zip
 
-unzip components-files.zip -d src/client/js
+unzip component-files.zip -d src/client/js
 ```
 
 - [x] **Import components into `App.js` and configure React router**
